@@ -1,0 +1,2219 @@
+{
+  "Examples": [
+    {
+      "Name": "Example 1",
+      "Markdown": "\tfoo\tbaz\t\tbim",
+      "HTML": "<pre><code>foo baz     bim\n</code></pre>"
+    },
+    {
+      "Name": "Example 2",
+      "Markdown": "    a\ta\n    ὐ\ta",
+      "HTML": "<pre><code>a   a\nὐ   a\n</code></pre>"
+    },
+    {
+      "Name": "Example 3",
+      "Markdown": "- `one\n- two`",
+      "HTML": "<ul>\n<li>`one</li>\n<li>two`</li>\n</ul>"
+    },
+    {
+      "Name": "Example 4",
+      "Markdown": "***\n---\n___",
+      "HTML": "<hr />\n<hr />\n<hr />"
+    },
+    {
+      "Name": "Example 5",
+      "Markdown": "+++",
+      "HTML": "<p>+++</p>"
+    },
+    {
+      "Name": "Example 6",
+      "Markdown": "===",
+      "HTML": "<p>===</p>"
+    },
+    {
+      "Name": "Example 7",
+      "Markdown": "--\n**\n__",
+      "HTML": "<p>--\n**\n__</p>"
+    },
+    {
+      "Name": "Example 8",
+      "Markdown": " ***\n  ***\n   ***",
+      "HTML": "<hr />\n<hr />\n<hr />"
+    },
+    {
+      "Name": "Example 9",
+      "Markdown": "    ***",
+      "HTML": "<pre><code>***\n</code></pre>"
+    },
+    {
+      "Name": "Example 10",
+      "Markdown": "Foo\n    ***",
+      "HTML": "<p>Foo\n***</p>"
+    },
+    {
+      "Name": "Example 11",
+      "Markdown": "_____________________________________",
+      "HTML": "<hr />"
+    },
+    {
+      "Name": "Example 12",
+      "Markdown": " - - -",
+      "HTML": "<hr />"
+    },
+    {
+      "Name": "Example 13",
+      "Markdown": " **  * ** * ** * **",
+      "HTML": "<hr />"
+    },
+    {
+      "Name": "Example 14",
+      "Markdown": "-     -      -      -",
+      "HTML": "<hr />"
+    },
+    {
+      "Name": "Example 15",
+      "Markdown": "- - - -    ",
+      "HTML": "<hr />"
+    },
+    {
+      "Name": "Example 16",
+      "Markdown": "_ _ _ _ a\n\na------",
+      "HTML": "<p>_ _ _ _ a</p>\n<p>a------</p>"
+    },
+    {
+      "Name": "Example 17",
+      "Markdown": " *-*",
+      "HTML": "<p><em>-</em></p>"
+    },
+    {
+      "Name": "Example 18",
+      "Markdown": "- foo\n***\n- bar",
+      "HTML": "<ul>\n<li>foo</li>\n</ul>\n<hr />\n<ul>\n<li>bar</li>\n</ul>"
+    },
+    {
+      "Name": "Example 19",
+      "Markdown": "Foo\n***\nbar",
+      "HTML": "<p>Foo</p>\n<hr />\n<p>bar</p>"
+    },
+    {
+      "Name": "Example 20",
+      "Markdown": "Foo\n---\nbar",
+      "HTML": "<h2>Foo</h2>\n<p>bar</p>"
+    },
+    {
+      "Name": "Example 21",
+      "Markdown": "* Foo\n* * *\n* Bar",
+      "HTML": "<ul>\n<li>Foo</li>\n</ul>\n<hr />\n<ul>\n<li>Bar</li>\n</ul>"
+    },
+    {
+      "Name": "Example 22",
+      "Markdown": "- Foo\n- * * *",
+      "HTML": "<ul>\n<li>Foo</li>\n<li><hr /></li>\n</ul>"
+    },
+    {
+      "Name": "Example 23",
+      "Markdown": "# foo\n## foo\n### foo\n#### foo\n##### foo\n###### foo",
+      "HTML": "<h1>foo</h1>\n<h2>foo</h2>\n<h3>foo</h3>\n<h4>foo</h4>\n<h5>foo</h5>\n<h6>foo</h6>"
+    },
+    {
+      "Name": "Example 24",
+      "Markdown": "####### foo",
+      "HTML": "<p>####### foo</p>"
+    },
+    {
+      "Name": "Example 25",
+      "Markdown": "#5 bolt",
+      "HTML": "<p>#5 bolt</p>"
+    },
+    {
+      "Name": "Example 26",
+      "Markdown": "\\## foo",
+      "HTML": "<p>## foo</p>"
+    },
+    {
+      "Name": "Example 27",
+      "Markdown": "# foo *bar* \\*baz\\*",
+      "HTML": "<h1>foo <em>bar</em> *baz*</h1>"
+    },
+    {
+      "Name": "Example 28",
+      "Markdown": "#                  foo                     ",
+      "HTML": "<h1>foo</h1>"
+    },
+    {
+      "Name": "Example 29",
+      "Markdown": " ### foo\n  ## foo\n   # foo",
+      "HTML": "<h3>foo</h3>\n<h2>foo</h2>\n<h1>foo</h1>"
+    },
+    {
+      "Name": "Example 30",
+      "Markdown": "    # foo",
+      "HTML": "<pre><code># foo\n</code></pre>"
+    },
+    {
+      "Name": "Example 31",
+      "Markdown": "foo\n    # bar",
+      "HTML": "<p>foo\n# bar</p>"
+    },
+    {
+      "Name": "Example 32",
+      "Markdown": "## foo ##\n  ###   bar    ###",
+      "HTML": "<h2>foo</h2>\n<h3>bar</h3>"
+    },
+    {
+      "Name": "Example 33",
+      "Markdown": "# foo ##################################\n##### foo ##",
+      "HTML": "<h1>foo</h1>\n<h5>foo</h5>"
+    },
+    {
+      "Name": "Example 34",
+      "Markdown": "### foo ###     ",
+      "HTML": "<h3>foo</h3>"
+    },
+    {
+      "Name": "Example 35",
+      "Markdown": "### foo ### b",
+      "HTML": "<h3>foo ### b</h3>"
+    },
+    {
+      "Name": "Example 36",
+      "Markdown": "### foo \\###\n## foo \\#\\##\n# foo \\#",
+      "HTML": "<h3>foo #</h3>\n<h2>foo ##</h2>\n<h1>foo #</h1>"
+    },
+    {
+      "Name": "Example 37",
+      "Markdown": "****\n## foo\n****",
+      "HTML": "<hr />\n<h2>foo</h2>\n<hr />"
+    },
+    {
+      "Name": "Example 38",
+      "Markdown": "Foo bar\n# baz\nBar foo",
+      "HTML": "<p>Foo bar</p>\n<h1>baz</h1>\n<p>Bar foo</p>"
+    },
+    {
+      "Name": "Example 39",
+      "Markdown": "## \n#\n### ###",
+      "HTML": "<h2></h2>\n<h1></h1>\n<h3></h3>"
+    },
+    {
+      "Name": "Example 40",
+      "Markdown": "Foo *bar*\n=========\n\nFoo *bar*\n---------",
+      "HTML": "<h1>Foo <em>bar</em></h1>\n<h2>Foo <em>bar</em></h2>"
+    },
+    {
+      "Name": "Example 41",
+      "Markdown": "Foo\n-------------------------\n\nFoo\n=",
+      "HTML": "<h2>Foo</h2>\n<h1>Foo</h1>"
+    },
+    {
+      "Name": "Example 42",
+      "Markdown": "   Foo\n---\n\n  Foo\n-----\n\n  Foo\n  ===",
+      "HTML": "<h2>Foo</h2>\n<h2>Foo</h2>\n<h1>Foo</h1>"
+    },
+    {
+      "Name": "Example 43",
+      "Markdown": "    Foo\n    ---\n\n    Foo\n---",
+      "HTML": "<pre><code>Foo\n---\n\nFoo\n</code></pre>\n<hr />"
+    },
+    {
+      "Name": "Example 44",
+      "Markdown": "Foo\n   ----      ",
+      "HTML": "<h2>Foo</h2>"
+    },
+    {
+      "Name": "Example 45",
+      "Markdown": "Foo\n     ---",
+      "HTML": "<p>Foo\n---</p>"
+    },
+    {
+      "Name": "Example 46",
+      "Markdown": "Foo\n= =\n\nFoo\n--- -",
+      "HTML": "<p>Foo\n= =</p>\n<p>Foo</p>\n<hr />"
+    },
+    {
+      "Name": "Example 47",
+      "Markdown": "Foo  \n-----",
+      "HTML": "<h2>Foo</h2>"
+    },
+    {
+      "Name": "Example 48",
+      "Markdown": "Foo\\\n----",
+      "HTML": "<h2>Foo\\</h2>"
+    },
+    {
+      "Name": "Example 49",
+      "Markdown": "`Foo\n----\n`\n\n<a title=\"a lot\n---\nof dashes\"/>",
+      "HTML": "<h2>`Foo</h2>\n<p>`</p>\n<h2>&lt;a title=&quot;a lot</h2>\n<p>of dashes&quot;/&gt;</p>"
+    },
+    {
+      "Name": "Example 50",
+      "Markdown": "> Foo\n---",
+      "HTML": "<blockquote>\n<p>Foo</p>\n</blockquote>\n<hr />"
+    },
+    {
+      "Name": "Example 51",
+      "Markdown": "Foo\nBar\n---\n\nFoo\nBar\n===",
+      "HTML": "<p>Foo\nBar</p>\n<hr />\n<p>Foo\nBar\n===</p>"
+    },
+    {
+      "Name": "Example 52",
+      "Markdown": "---\nFoo\n---\nBar\n---\nBaz",
+      "HTML": "<hr />\n<h2>Foo</h2>\n<h2>Bar</h2>\n<p>Baz</p>"
+    },
+    {
+      "Name": "Example 53",
+      "Markdown": "\n====",
+      "HTML": "<p>====</p>"
+    },
+    {
+      "Name": "Example 54",
+      "Markdown": "    a simple\n      indented code block",
+      "HTML": "<pre><code>a simple\n  indented code block\n</code></pre>"
+    },
+    {
+      "Name": "Example 55",
+      "Markdown": "    <a/>\n    *hi*\n\n    - one",
+      "HTML": "<pre><code>&lt;a/&gt;\n*hi*\n\n- one\n</code></pre>"
+    },
+    {
+      "Name": "Example 56",
+      "Markdown": "    chunk1\n\n    chunk2\n  \n \n \n    chunk3",
+      "HTML": "<pre><code>chunk1\n\nchunk2\n\n\n\nchunk3\n</code></pre>"
+    },
+    {
+      "Name": "Example 57",
+      "Markdown": "    chunk1\n      \n      chunk2",
+      "HTML": "<pre><code>chunk1\n  \n  chunk2\n</code></pre>"
+    },
+    {
+      "Name": "Example 58",
+      "Markdown": "Foo\n    bar\n",
+      "HTML": "<p>Foo\nbar</p>"
+    },
+    {
+      "Name": "Example 59",
+      "Markdown": "    foo\nbar",
+      "HTML": "<pre><code>foo\n</code></pre>\n<p>bar</p>"
+    },
+    {
+      "Name": "Example 60",
+      "Markdown": "# Header\n    foo\nHeader\n------\n    foo\n----",
+      "HTML": "<h1>Header</h1>\n<pre><code>foo\n</code></pre>\n<h2>Header</h2>\n<pre><code>foo\n</code></pre>\n<hr />"
+    },
+    {
+      "Name": "Example 61",
+      "Markdown": "        foo\n    bar",
+      "HTML": "<pre><code>    foo\nbar\n</code></pre>"
+    },
+    {
+      "Name": "Example 62",
+      "Markdown": "\n    \n    foo\n    \n",
+      "HTML": "<pre><code>foo\n</code></pre>"
+    },
+    {
+      "Name": "Example 63",
+      "Markdown": "    foo  ",
+      "HTML": "<pre><code>foo  \n</code></pre>"
+    },
+    {
+      "Name": "Example 64",
+      "Markdown": "```\n<\n >\n```",
+      "HTML": "<pre><code>&lt;\n &gt;\n</code></pre>"
+    },
+    {
+      "Name": "Example 65",
+      "Markdown": "~~~\n<\n >\n~~~",
+      "HTML": "<pre><code>&lt;\n &gt;\n</code></pre>"
+    },
+    {
+      "Name": "Example 66",
+      "Markdown": "```\naaa\n~~~\n```",
+      "HTML": "<pre><code>aaa\n~~~\n</code></pre>"
+    },
+    {
+      "Name": "Example 67",
+      "Markdown": "~~~\naaa\n```\n~~~",
+      "HTML": "<pre><code>aaa\n```\n</code></pre>"
+    },
+    {
+      "Name": "Example 68",
+      "Markdown": "````\naaa\n```\n``````",
+      "HTML": "<pre><code>aaa\n```\n</code></pre>"
+    },
+    {
+      "Name": "Example 69",
+      "Markdown": "~~~~\naaa\n~~~\n~~~~",
+      "HTML": "<pre><code>aaa\n~~~\n</code></pre>"
+    },
+    {
+      "Name": "Example 70",
+      "Markdown": "```",
+      "HTML": "<pre><code></code></pre>"
+    },
+    {
+      "Name": "Example 71",
+      "Markdown": "`````\n\n```\naaa",
+      "HTML": "<pre><code>\n```\naaa\n</code></pre>"
+    },
+    {
+      "Name": "Example 72",
+      "Markdown": "```\n\n  \n```",
+      "HTML": "<pre><code>\n  \n</code></pre>"
+    },
+    {
+      "Name": "Example 73",
+      "Markdown": "```\n```",
+      "HTML": "<pre><code></code></pre>"
+    },
+    {
+      "Name": "Example 74",
+      "Markdown": " ```\n aaa\naaa\n```",
+      "HTML": "<pre><code>aaa\naaa\n</code></pre>"
+    },
+    {
+      "Name": "Example 75",
+      "Markdown": "  ```\naaa\n  aaa\naaa\n  ```",
+      "HTML": "<pre><code>aaa\naaa\naaa\n</code></pre>"
+    },
+    {
+      "Name": "Example 76",
+      "Markdown": "   ```\n   aaa\n    aaa\n  aaa\n   ```",
+      "HTML": "<pre><code>aaa\n aaa\naaa\n</code></pre>"
+    },
+    {
+      "Name": "Example 77",
+      "Markdown": "    ```\n    aaa\n    ```",
+      "HTML": "<pre><code>```\naaa\n```\n</code></pre>"
+    },
+    {
+      "Name": "Example 78",
+      "Markdown": "``` ```\naaa",
+      "HTML": "<p><code></code>\naaa</p>"
+    },
+    {
+      "Name": "Example 79",
+      "Markdown": "~~~~~~\naaa\n~~~ ~~",
+      "HTML": "<pre><code>aaa\n~~~ ~~\n</code></pre>"
+    },
+    {
+      "Name": "Example 80",
+      "Markdown": "foo\n```\nbar\n```\nbaz",
+      "HTML": "<p>foo</p>\n<pre><code>bar\n</code></pre>\n<p>baz</p>"
+    },
+    {
+      "Name": "Example 81",
+      "Markdown": "foo\n---\n~~~\nbar\n~~~\n# baz",
+      "HTML": "<h2>foo</h2>\n<pre><code>bar\n</code></pre>\n<h1>baz</h1>"
+    },
+    {
+      "Name": "Example 82",
+      "Markdown": "```ruby\ndef foo(x)\n  return 3\nend\n```",
+      "HTML": "<pre><code class=\"language-ruby\">def foo(x)\n  return 3\nend\n</code></pre>"
+    },
+    {
+      "Name": "Example 83",
+      "Markdown": "~~~~    ruby startline=3 $%@#$\ndef foo(x)\n  return 3\nend\n~~~~~~~",
+      "HTML": "<pre><code class=\"language-ruby\">def foo(x)\n  return 3\nend\n</code></pre>"
+    },
+    {
+      "Name": "Example 84",
+      "Markdown": "````;\n````",
+      "HTML": "<pre><code class=\"language-;\"></code></pre>"
+    },
+    {
+      "Name": "Example 85",
+      "Markdown": "``` aa ```\nfoo",
+      "HTML": "<p><code>aa</code>\nfoo</p>"
+    },
+    {
+      "Name": "Example 86",
+      "Markdown": "```\n``` aaa\n```",
+      "HTML": "<pre><code>``` aaa\n</code></pre>"
+    },
+    {
+      "Name": "Example 87",
+      "Markdown": "<table>\n  <tr>\n    <td>\n           hi\n    </td>\n  </tr>\n</table>\n\nokay.",
+      "HTML": "<table>\n  <tr>\n    <td>\n           hi\n    </td>\n  </tr>\n</table>\n<p>okay.</p>"
+    },
+    {
+      "Name": "Example 88",
+      "Markdown": " <div>\n  *hello*\n         <foo><a>",
+      "HTML": " <div>\n  *hello*\n         <foo><a>"
+    },
+    {
+      "Name": "Example 89",
+      "Markdown": "<DIV CLASS=\"foo\">\n\n*Markdown*\n\n</DIV>",
+      "HTML": "<DIV CLASS=\"foo\">\n<p><em>Markdown</em></p>\n</DIV>"
+    },
+    {
+      "Name": "Example 90",
+      "Markdown": "<div></div>\n``` c\nint x = 33;\n```",
+      "HTML": "<div></div>\n``` c\nint x = 33;\n```"
+    },
+    {
+      "Name": "Example 91",
+      "Markdown": "<!-- Foo\nbar\n   baz -->",
+      "HTML": "<!-- Foo\nbar\n   baz -->"
+    },
+    {
+      "Name": "Example 92",
+      "Markdown": "<?php\n  echo 'foo'\n?>",
+      "HTML": "<?php\n  echo 'foo'\n?>"
+    },
+    {
+      "Name": "Example 93",
+      "Markdown": "<![CDATA[\nfunction matchwo(a,b)\n{\nif (a < b && a < 0) then\n  {\n  return 1;\n  }\nelse\n  {\n  return 0;\n  }\n}\n]]>",
+      "HTML": "<![CDATA[\nfunction matchwo(a,b)\n{\nif (a < b && a < 0) then\n  {\n  return 1;\n  }\nelse\n  {\n  return 0;\n  }\n}\n]]>"
+    },
+    {
+      "Name": "Example 94",
+      "Markdown": "  <!-- foo -->\n\n    <!-- foo -->",
+      "HTML": "  <!-- foo -->\n<pre><code>&lt;!-- foo --&gt;\n</code></pre>"
+    },
+    {
+      "Name": "Example 95",
+      "Markdown": "Foo\n<div>\nbar\n</div>",
+      "HTML": "<p>Foo</p>\n<div>\nbar\n</div>"
+    },
+    {
+      "Name": "Example 96",
+      "Markdown": "<div>\nbar\n</div>\n*foo*",
+      "HTML": "<div>\nbar\n</div>\n*foo*"
+    },
+    {
+      "Name": "Example 97",
+      "Markdown": "<div class\nfoo",
+      "HTML": "<div class\nfoo"
+    },
+    {
+      "Name": "Example 98",
+      "Markdown": "<div>\n\n*Emphasized* text.\n\n</div>",
+      "HTML": "<div>\n<p><em>Emphasized</em> text.</p>\n</div>"
+    },
+    {
+      "Name": "Example 99",
+      "Markdown": "<div>\n*Emphasized* text.\n</div>",
+      "HTML": "<div>\n*Emphasized* text.\n</div>"
+    },
+    {
+      "Name": "Example 100",
+      "Markdown": "<table>\n\n<tr>\n\n<td>\nHi\n</td>\n\n</tr>\n\n</table>",
+      "HTML": "<table>\n<tr>\n<td>\nHi\n</td>\n</tr>\n</table>"
+    },
+    {
+      "Name": "Example 101",
+      "Markdown": "[foo]: /url \"title\"\n\n[foo]",
+      "HTML": "<p><a href=\"/url\" title=\"title\">foo</a></p>"
+    },
+    {
+      "Name": "Example 102",
+      "Markdown": "   [foo]: \n      /url  \n           'the title'  \n\n[foo]",
+      "HTML": "<p><a href=\"/url\" title=\"the title\">foo</a></p>"
+    },
+    {
+      "Name": "Example 103",
+      "Markdown": "[Foo*bar\\]]:my_(url) 'title (with parens)'\n\n[Foo*bar\\]]",
+      "HTML": "<p><a href=\"my_(url)\" title=\"title (with parens)\">Foo*bar]</a></p>"
+    },
+    {
+      "Name": "Example 104",
+      "Markdown": "[Foo bar]:\n<my url>\n'title'\n\n[Foo bar]",
+      "HTML": "<p><a href=\"my url\" title=\"title\">Foo bar</a></p>"
+    },
+    {
+      "Name": "Example 105",
+      "Markdown": "[foo]:\n/url\n\n[foo]",
+      "HTML": "<p><a href=\"/url\">foo</a></p>"
+    },
+    {
+      "Name": "Example 106",
+      "Markdown": "[foo]:\n\n[foo]",
+      "HTML": "<p>[foo]:</p>\n<p>[foo]</p>"
+    },
+    {
+      "Name": "Example 107",
+      "Markdown": "[foo]\n\n[foo]: url",
+      "HTML": "<p><a href=\"url\">foo</a></p>"
+    },
+    {
+      "Name": "Example 108",
+      "Markdown": "[foo]\n\n[foo]: first\n[foo]: second",
+      "HTML": "<p><a href=\"first\">foo</a></p>"
+    },
+    {
+      "Name": "Example 109",
+      "Markdown": "[FOO]: /url\n\n[Foo]",
+      "HTML": "<p><a href=\"/url\">Foo</a></p>"
+    },
+    {
+      "Name": "Example 110",
+      "Markdown": "[ΑΓΩ]: /φου\n\n[αγω]",
+      "HTML": "<p><a href=\"/φου\">αγω</a></p>"
+    },
+    {
+      "Name": "Example 111",
+      "Markdown": "[foo]: /url",
+      "HTML": ""
+    },
+    {
+      "Name": "Example 112",
+      "Markdown": "[foo]: /url \"title\" ok",
+      "HTML": "<p>[foo]: /url &quot;title&quot; ok</p>"
+    },
+    {
+      "Name": "Example 113",
+      "Markdown": "    [foo]: /url \"title\"\n\n[foo]",
+      "HTML": "<pre><code>[foo]: /url &quot;title&quot;\n</code></pre>\n<p>[foo]</p>"
+    },
+    {
+      "Name": "Example 114",
+      "Markdown": "```\n[foo]: /url\n```\n\n[foo]",
+      "HTML": "<pre><code>[foo]: /url\n</code></pre>\n<p>[foo]</p>"
+    },
+    {
+      "Name": "Example 115",
+      "Markdown": "Foo\n[bar]: /baz\n\n[bar]",
+      "HTML": "<p>Foo\n[bar]: /baz</p>\n<p>[bar]</p>"
+    },
+    {
+      "Name": "Example 116",
+      "Markdown": "# [Foo]\n[foo]: /url\n> bar",
+      "HTML": "<h1><a href=\"/url\">Foo</a></h1>\n<blockquote>\n<p>bar</p>\n</blockquote>"
+    },
+    {
+      "Name": "Example 117",
+      "Markdown": "[foo]: /foo-url \"foo\"\n[bar]: /bar-url\n  \"bar\"\n[baz]: /baz-url\n\n[foo],\n[bar],\n[baz]",
+      "HTML": "<p><a href=\"/foo-url\" title=\"foo\">foo</a>,\n<a href=\"/bar-url\" title=\"bar\">bar</a>,\n<a href=\"/baz-url\">baz</a></p>"
+    },
+    {
+      "Name": "Example 118",
+      "Markdown": "[foo]\n\n> [foo]: /url",
+      "HTML": "<p><a href=\"/url\">foo</a></p>\n<blockquote>\n</blockquote>"
+    },
+    {
+      "Name": "Example 119",
+      "Markdown": "aaa\n\nbbb",
+      "HTML": "<p>aaa</p>\n<p>bbb</p>"
+    },
+    {
+      "Name": "Example 120",
+      "Markdown": "aaa\nbbb\n\nccc\nddd",
+      "HTML": "<p>aaa\nbbb</p>\n<p>ccc\nddd</p>"
+    },
+    {
+      "Name": "Example 121",
+      "Markdown": "aaa\n\n\nbbb",
+      "HTML": "<p>aaa</p>\n<p>bbb</p>"
+    },
+    {
+      "Name": "Example 122",
+      "Markdown": "  aaa\n bbb",
+      "HTML": "<p>aaa\nbbb</p>"
+    },
+    {
+      "Name": "Example 123",
+      "Markdown": "aaa\n             bbb\n                                       ccc",
+      "HTML": "<p>aaa\nbbb\nccc</p>"
+    },
+    {
+      "Name": "Example 124",
+      "Markdown": "   aaa\nbbb",
+      "HTML": "<p>aaa\nbbb</p>"
+    },
+    {
+      "Name": "Example 125",
+      "Markdown": "    aaa\nbbb",
+      "HTML": "<pre><code>aaa\n</code></pre>\n<p>bbb</p>"
+    },
+    {
+      "Name": "Example 126",
+      "Markdown": "aaa     \nbbb     ",
+      "HTML": "<p>aaa<br />\nbbb</p>"
+    },
+    {
+      "Name": "Example 127",
+      "Markdown": "  \n\naaa\n  \n\n# aaa\n\n  ",
+      "HTML": "<p>aaa</p>\n<h1>aaa</h1>"
+    },
+    {
+      "Name": "Example 128",
+      "Markdown": "> # Foo\n> bar\n> baz",
+      "HTML": "<blockquote>\n<h1>Foo</h1>\n<p>bar\nbaz</p>\n</blockquote>"
+    },
+    {
+      "Name": "Example 129",
+      "Markdown": "># Foo\n>bar\n> baz",
+      "HTML": "<blockquote>\n<h1>Foo</h1>\n<p>bar\nbaz</p>\n</blockquote>"
+    },
+    {
+      "Name": "Example 130",
+      "Markdown": "   > # Foo\n   > bar\n > baz",
+      "HTML": "<blockquote>\n<h1>Foo</h1>\n<p>bar\nbaz</p>\n</blockquote>"
+    },
+    {
+      "Name": "Example 131",
+      "Markdown": "    > # Foo\n    > bar\n    > baz",
+      "HTML": "<pre><code>&gt; # Foo\n&gt; bar\n&gt; baz\n</code></pre>"
+    },
+    {
+      "Name": "Example 132",
+      "Markdown": "> # Foo\n> bar\nbaz",
+      "HTML": "<blockquote>\n<h1>Foo</h1>\n<p>bar\nbaz</p>\n</blockquote>"
+    },
+    {
+      "Name": "Example 133",
+      "Markdown": "> bar\nbaz\n> foo",
+      "HTML": "<blockquote>\n<p>bar\nbaz\nfoo</p>\n</blockquote>"
+    },
+    {
+      "Name": "Example 134",
+      "Markdown": "> foo\n---",
+      "HTML": "<blockquote>\n<p>foo</p>\n</blockquote>\n<hr />"
+    },
+    {
+      "Name": "Example 135",
+      "Markdown": "> - foo\n- bar",
+      "HTML": "<blockquote>\n<ul>\n<li>foo</li>\n</ul>\n</blockquote>\n<ul>\n<li>bar</li>\n</ul>"
+    },
+    {
+      "Name": "Example 136",
+      "Markdown": ">     foo\n    bar",
+      "HTML": "<blockquote>\n<pre><code>foo\n</code></pre>\n</blockquote>\n<pre><code>bar\n</code></pre>"
+    },
+    {
+      "Name": "Example 137",
+      "Markdown": "> ```\nfoo\n```",
+      "HTML": "<blockquote>\n<pre><code></code></pre>\n</blockquote>\n<p>foo</p>\n<pre><code></code></pre>"
+    },
+    {
+      "Name": "Example 138",
+      "Markdown": ">",
+      "HTML": "<blockquote>\n</blockquote>"
+    },
+    {
+      "Name": "Example 139",
+      "Markdown": ">\n>  \n> ",
+      "HTML": "<blockquote>\n</blockquote>"
+    },
+    {
+      "Name": "Example 140",
+      "Markdown": ">\n> foo\n>  ",
+      "HTML": "<blockquote>\n<p>foo</p>\n</blockquote>"
+    },
+    {
+      "Name": "Example 141",
+      "Markdown": "> foo\n\n> bar",
+      "HTML": "<blockquote>\n<p>foo</p>\n</blockquote>\n<blockquote>\n<p>bar</p>\n</blockquote>"
+    },
+    {
+      "Name": "Example 142",
+      "Markdown": "> foo\n> bar",
+      "HTML": "<blockquote>\n<p>foo\nbar</p>\n</blockquote>"
+    },
+    {
+      "Name": "Example 143",
+      "Markdown": "> foo\n>\n> bar",
+      "HTML": "<blockquote>\n<p>foo</p>\n<p>bar</p>\n</blockquote>"
+    },
+    {
+      "Name": "Example 144",
+      "Markdown": "foo\n> bar",
+      "HTML": "<p>foo</p>\n<blockquote>\n<p>bar</p>\n</blockquote>"
+    },
+    {
+      "Name": "Example 145",
+      "Markdown": "> aaa\n***\n> bbb",
+      "HTML": "<blockquote>\n<p>aaa</p>\n</blockquote>\n<hr />\n<blockquote>\n<p>bbb</p>\n</blockquote>"
+    },
+    {
+      "Name": "Example 146",
+      "Markdown": "> bar\nbaz",
+      "HTML": "<blockquote>\n<p>bar\nbaz</p>\n</blockquote>"
+    },
+    {
+      "Name": "Example 147",
+      "Markdown": "> bar\n\nbaz",
+      "HTML": "<blockquote>\n<p>bar</p>\n</blockquote>\n<p>baz</p>"
+    },
+    {
+      "Name": "Example 148",
+      "Markdown": "> bar\n>\nbaz",
+      "HTML": "<blockquote>\n<p>bar</p>\n</blockquote>\n<p>baz</p>"
+    },
+    {
+      "Name": "Example 149",
+      "Markdown": "> > > foo\nbar",
+      "HTML": "<blockquote>\n<blockquote>\n<blockquote>\n<p>foo\nbar</p>\n</blockquote>\n</blockquote>\n</blockquote>"
+    },
+    {
+      "Name": "Example 150",
+      "Markdown": ">>> foo\n> bar\n>>baz",
+      "HTML": "<blockquote>\n<blockquote>\n<blockquote>\n<p>foo\nbar\nbaz</p>\n</blockquote>\n</blockquote>\n</blockquote>"
+    },
+    {
+      "Name": "Example 151",
+      "Markdown": ">     code\n\n>    not code",
+      "HTML": "<blockquote>\n<pre><code>code\n</code></pre>\n</blockquote>\n<blockquote>\n<p>not code</p>\n</blockquote>"
+    },
+    {
+      "Name": "Example 152",
+      "Markdown": "A paragraph\nwith two lines.\n\n    indented code\n\n> A block quote.",
+      "HTML": "<p>A paragraph\nwith two lines.</p>\n<pre><code>indented code\n</code></pre>\n<blockquote>\n<p>A block quote.</p>\n</blockquote>"
+    },
+    {
+      "Name": "Example 153",
+      "Markdown": "1.  A paragraph\n    with two lines.\n\n        indented code\n\n    > A block quote.",
+      "HTML": "<ol>\n<li><p>A paragraph\nwith two lines.</p>\n<pre><code>indented code\n</code></pre>\n<blockquote>\n<p>A block quote.</p>\n</blockquote></li>\n</ol>"
+    },
+    {
+      "Name": "Example 154",
+      "Markdown": "- one\n\n two",
+      "HTML": "<ul>\n<li>one</li>\n</ul>\n<p>two</p>"
+    },
+    {
+      "Name": "Example 155",
+      "Markdown": "- one\n\n  two",
+      "HTML": "<ul>\n<li><p>one</p>\n<p>two</p></li>\n</ul>"
+    },
+    {
+      "Name": "Example 156",
+      "Markdown": " -    one\n\n     two",
+      "HTML": "<ul>\n<li>one</li>\n</ul>\n<pre><code> two\n</code></pre>"
+    },
+    {
+      "Name": "Example 157",
+      "Markdown": " -    one\n\n      two",
+      "HTML": "<ul>\n<li><p>one</p>\n<p>two</p></li>\n</ul>"
+    },
+    {
+      "Name": "Example 158",
+      "Markdown": "   > > 1.  one\n>>\n>>     two",
+      "HTML": "<blockquote>\n<blockquote>\n<ol>\n<li><p>one</p>\n<p>two</p></li>\n</ol>\n</blockquote>\n</blockquote>"
+    },
+    {
+      "Name": "Example 159",
+      "Markdown": ">>- one\n>>\n  >  > two",
+      "HTML": "<blockquote>\n<blockquote>\n<ul>\n<li>one</li>\n</ul>\n<p>two</p>\n</blockquote>\n</blockquote>"
+    },
+    {
+      "Name": "Example 160",
+      "Markdown": "- foo\n\n  bar\n\n- foo\n\n\n  bar\n\n- ```\n  foo\n\n\n  bar\n  ```",
+      "HTML": "<ul>\n<li><p>foo</p>\n<p>bar</p></li>\n<li><p>foo</p></li>\n</ul>\n<p>bar</p>\n<ul>\n<li><pre><code>foo\n\n\nbar\n</code></pre></li>\n</ul>"
+    },
+    {
+      "Name": "Example 161",
+      "Markdown": "1.  foo\n\n    ```\n    bar\n    ```\n\n    baz\n\n    > bam",
+      "HTML": "<ol>\n<li><p>foo</p>\n<pre><code>bar\n</code></pre>\n<p>baz</p>\n<blockquote>\n<p>bam</p>\n</blockquote></li>\n</ol>"
+    },
+    {
+      "Name": "Example 162",
+      "Markdown": "- foo\n\n      bar",
+      "HTML": "<ul>\n<li><p>foo</p>\n<pre><code>bar\n</code></pre></li>\n</ul>"
+    },
+    {
+      "Name": "Example 163",
+      "Markdown": "  10.  foo\n\n           bar",
+      "HTML": "<ol start=\"10\">\n<li><p>foo</p>\n<pre><code>bar\n</code></pre></li>\n</ol>"
+    },
+    {
+      "Name": "Example 164",
+      "Markdown": "    indented code\n\nparagraph\n\n    more code",
+      "HTML": "<pre><code>indented code\n</code></pre>\n<p>paragraph</p>\n<pre><code>more code\n</code></pre>"
+    },
+    {
+      "Name": "Example 165",
+      "Markdown": "1.     indented code\n\n   paragraph\n\n       more code",
+      "HTML": "<ol>\n<li><pre><code>indented code\n</code></pre>\n<p>paragraph</p>\n<pre><code>more code\n</code></pre></li>\n</ol>"
+    },
+    {
+      "Name": "Example 166",
+      "Markdown": "1.      indented code\n\n   paragraph\n\n       more code",
+      "HTML": "<ol>\n<li><pre><code> indented code\n</code></pre>\n<p>paragraph</p>\n<pre><code>more code\n</code></pre></li>\n</ol>"
+    },
+    {
+      "Name": "Example 167",
+      "Markdown": "   foo\n\nbar",
+      "HTML": "<p>foo</p>\n<p>bar</p>"
+    },
+    {
+      "Name": "Example 168",
+      "Markdown": "-    foo\n\n  bar",
+      "HTML": "<ul>\n<li>foo</li>\n</ul>\n<p>bar</p>"
+    },
+    {
+      "Name": "Example 169",
+      "Markdown": "-  foo\n\n   bar",
+      "HTML": "<ul>\n<li><p>foo</p>\n<p>bar</p></li>\n</ul>"
+    },
+    {
+      "Name": "Example 170",
+      "Markdown": " 1.  A paragraph\n     with two lines.\n\n         indented code\n\n     > A block quote.",
+      "HTML": "<ol>\n<li><p>A paragraph\nwith two lines.</p>\n<pre><code>indented code\n</code></pre>\n<blockquote>\n<p>A block quote.</p>\n</blockquote></li>\n</ol>"
+    },
+    {
+      "Name": "Example 171",
+      "Markdown": "  1.  A paragraph\n      with two lines.\n\n          indented code\n\n      > A block quote.",
+      "HTML": "<ol>\n<li><p>A paragraph\nwith two lines.</p>\n<pre><code>indented code\n</code></pre>\n<blockquote>\n<p>A block quote.</p>\n</blockquote></li>\n</ol>"
+    },
+    {
+      "Name": "Example 172",
+      "Markdown": "   1.  A paragraph\n       with two lines.\n\n           indented code\n\n       > A block quote.",
+      "HTML": "<ol>\n<li><p>A paragraph\nwith two lines.</p>\n<pre><code>indented code\n</code></pre>\n<blockquote>\n<p>A block quote.</p>\n</blockquote></li>\n</ol>"
+    },
+    {
+      "Name": "Example 173",
+      "Markdown": "    1.  A paragraph\n        with two lines.\n\n            indented code\n\n        > A block quote.",
+      "HTML": "<pre><code>1.  A paragraph\n    with two lines.\n\n        indented code\n\n    &gt; A block quote.\n</code></pre>"
+    },
+    {
+      "Name": "Example 174",
+      "Markdown": "  1.  A paragraph\nwith two lines.\n\n          indented code\n\n      > A block quote.",
+      "HTML": "<ol>\n<li><p>A paragraph\nwith two lines.</p>\n<pre><code>indented code\n</code></pre>\n<blockquote>\n<p>A block quote.</p>\n</blockquote></li>\n</ol>"
+    },
+    {
+      "Name": "Example 175",
+      "Markdown": "  1.  A paragraph\n    with two lines.",
+      "HTML": "<ol>\n<li>A paragraph\nwith two lines.</li>\n</ol>"
+    },
+    {
+      "Name": "Example 176",
+      "Markdown": "> 1. > Blockquote\ncontinued here.",
+      "HTML": "<blockquote>\n<ol>\n<li><blockquote>\n<p>Blockquote\ncontinued here.</p>\n</blockquote></li>\n</ol>\n</blockquote>"
+    },
+    {
+      "Name": "Example 177",
+      "Markdown": "> 1. > Blockquote\n> continued here.",
+      "HTML": "<blockquote>\n<ol>\n<li><blockquote>\n<p>Blockquote\ncontinued here.</p>\n</blockquote></li>\n</ol>\n</blockquote>"
+    },
+    {
+      "Name": "Example 178",
+      "Markdown": "- foo\n  - bar\n    - baz",
+      "HTML": "<ul>\n<li>foo\n<ul>\n<li>bar\n<ul>\n<li>baz</li>\n</ul></li>\n</ul></li>\n</ul>"
+    },
+    {
+      "Name": "Example 179",
+      "Markdown": "- foo\n - bar\n  - baz",
+      "HTML": "<ul>\n<li>foo</li>\n<li>bar</li>\n<li>baz</li>\n</ul>"
+    },
+    {
+      "Name": "Example 180",
+      "Markdown": "10) foo\n    - bar",
+      "HTML": "<ol start=\"10\">\n<li>foo\n<ul>\n<li>bar</li>\n</ul></li>\n</ol>"
+    },
+    {
+      "Name": "Example 181",
+      "Markdown": "10) foo\n   - bar",
+      "HTML": "<ol start=\"10\">\n<li>foo</li>\n</ol>\n<ul>\n<li>bar</li>\n</ul>"
+    },
+    {
+      "Name": "Example 182",
+      "Markdown": "- - foo",
+      "HTML": "<ul>\n<li><ul>\n<li>foo</li>\n</ul></li>\n</ul>"
+    },
+    {
+      "Name": "Example 183",
+      "Markdown": "1. - 2. foo",
+      "HTML": "<ol>\n<li><ul>\n<li><ol start=\"2\">\n<li>foo</li>\n</ol></li>\n</ul></li>\n</ol>"
+    },
+    {
+      "Name": "Example 184",
+      "Markdown": "- foo\n-\n- bar",
+      "HTML": "<ul>\n<li>foo</li>\n<li></li>\n<li>bar</li>\n</ul>"
+    },
+    {
+      "Name": "Example 185",
+      "Markdown": "-",
+      "HTML": "<ul>\n<li></li>\n</ul>"
+    },
+    {
+      "Name": "Example 186",
+      "Markdown": "- foo\n- bar\n+ baz",
+      "HTML": "<ul>\n<li>foo</li>\n<li>bar</li>\n</ul>\n<ul>\n<li>baz</li>\n</ul>"
+    },
+    {
+      "Name": "Example 187",
+      "Markdown": "1. foo\n2. bar\n3) baz",
+      "HTML": "<ol>\n<li>foo</li>\n<li>bar</li>\n</ol>\n<ol start=\"3\">\n<li>baz</li>\n</ol>"
+    },
+    {
+      "Name": "Example 188",
+      "Markdown": "- foo\n\n- bar\n\n\n- baz",
+      "HTML": "<ul>\n<li><p>foo</p></li>\n<li><p>bar</p></li>\n</ul>\n<ul>\n<li>baz</li>\n</ul>"
+    },
+    {
+      "Name": "Example 189",
+      "Markdown": "- foo\n\n\n  bar\n- baz",
+      "HTML": "<ul>\n<li>foo</li>\n</ul>\n<p>bar</p>\n<ul>\n<li>baz</li>\n</ul>"
+    },
+    {
+      "Name": "Example 190",
+      "Markdown": "- foo\n  - bar\n    - baz\n\n\n      bim",
+      "HTML": "<ul>\n<li>foo\n<ul>\n<li>bar\n<ul>\n<li>baz</li>\n</ul></li>\n</ul></li>\n</ul>\n<pre><code>  bim\n</code></pre>"
+    },
+    {
+      "Name": "Example 191",
+      "Markdown": "- foo\n- bar\n\n\n- baz\n- bim",
+      "HTML": "<ul>\n<li>foo</li>\n<li>bar</li>\n</ul>\n<ul>\n<li>baz</li>\n<li>bim</li>\n</ul>"
+    },
+    {
+      "Name": "Example 192",
+      "Markdown": "-   foo\n\n    notcode\n\n-   foo\n\n\n    code",
+      "HTML": "<ul>\n<li><p>foo</p>\n<p>notcode</p></li>\n<li><p>foo</p></li>\n</ul>\n<pre><code>code\n</code></pre>"
+    },
+    {
+      "Name": "Example 193",
+      "Markdown": "- a\n - b\n  - c\n   - d\n  - e\n - f\n- g",
+      "HTML": "<ul>\n<li>a</li>\n<li>b</li>\n<li>c</li>\n<li>d</li>\n<li>e</li>\n<li>f</li>\n<li>g</li>\n</ul>"
+    },
+    {
+      "Name": "Example 194",
+      "Markdown": "- a\n- b\n\n- c",
+      "HTML": "<ul>\n<li><p>a</p></li>\n<li><p>b</p></li>\n<li><p>c</p></li>\n</ul>"
+    },
+    {
+      "Name": "Example 195",
+      "Markdown": "* a\n*\n\n* c",
+      "HTML": "<ul>\n<li><p>a</p></li>\n<li></li>\n<li><p>c</p></li>\n</ul>"
+    },
+    {
+      "Name": "Example 196",
+      "Markdown": "- a\n- b\n\n  c\n- d",
+      "HTML": "<ul>\n<li><p>a</p></li>\n<li><p>b</p>\n<p>c</p></li>\n<li><p>d</p></li>\n</ul>"
+    },
+    {
+      "Name": "Example 197",
+      "Markdown": "- a\n- b\n\n  [ref]: /url\n- d",
+      "HTML": "<ul>\n<li><p>a</p></li>\n<li><p>b</p></li>\n<li><p>d</p></li>\n</ul>"
+    },
+    {
+      "Name": "Example 198",
+      "Markdown": "- a\n- ```\n  b\n\n\n  ```\n- c",
+      "HTML": "<ul>\n<li>a</li>\n<li><pre><code>b\n\n\n</code></pre></li>\n<li>c</li>\n</ul>"
+    },
+    {
+      "Name": "Example 199",
+      "Markdown": "- a\n  - b\n\n    c\n- d",
+      "HTML": "<ul>\n<li>a\n<ul>\n<li><p>b</p>\n<p>c</p></li>\n</ul></li>\n<li>d</li>\n</ul>"
+    },
+    {
+      "Name": "Example 200",
+      "Markdown": "* a\n  > b\n  >\n* c",
+      "HTML": "<ul>\n<li>a\n<blockquote>\n<p>b</p>\n</blockquote></li>\n<li>c</li>\n</ul>"
+    },
+    {
+      "Name": "Example 201",
+      "Markdown": "- a\n  > b\n  ```\n  c\n  ```\n- d",
+      "HTML": "<ul>\n<li>a\n<blockquote>\n<p>b</p>\n</blockquote>\n<pre><code>c\n</code></pre></li>\n<li>d</li>\n</ul>"
+    },
+    {
+      "Name": "Example 202",
+      "Markdown": "- a",
+      "HTML": "<ul>\n<li>a</li>\n</ul>"
+    },
+    {
+      "Name": "Example 203",
+      "Markdown": "- a\n  - b",
+      "HTML": "<ul>\n<li>a\n<ul>\n<li>b</li>\n</ul></li>\n</ul>"
+    },
+    {
+      "Name": "Example 204",
+      "Markdown": "* foo\n  * bar\n\n  baz",
+      "HTML": "<ul>\n<li><p>foo</p>\n<ul>\n<li>bar</li>\n</ul>\n<p>baz</p></li>\n</ul>"
+    },
+    {
+      "Name": "Example 205",
+      "Markdown": "- a\n  - b\n  - c\n\n- d\n  - e\n  - f",
+      "HTML": "<ul>\n<li><p>a</p>\n<ul>\n<li>b</li>\n<li>c</li>\n</ul></li>\n<li><p>d</p>\n<ul>\n<li>e</li>\n<li>f</li>\n</ul></li>\n</ul>"
+    },
+    {
+      "Name": "Example 206",
+      "Markdown": "`hi`lo`",
+      "HTML": "<p><code>hi</code>lo`</p>"
+    },
+    {
+      "Name": "Example 207",
+      "Markdown": "\\!\\\"\\#\\$\\%\\&\\'\\(\\)\\*\\+\\,\\-\\.\\/\\:\\;\\<\\=\\>\\?\\@\\[\\\\\\]\\^\\_\\`\\{\\|\\}\\~",
+      "HTML": "<p>!&quot;#$%&amp;'()*+,-./:;&lt;=&gt;?@[\\]^_`{|}~</p>"
+    },
+    {
+      "Name": "Example 208",
+      "Markdown": "\\\t\\A\\a\\ \\3\\φ\\«",
+      "HTML": "<p>\\   \\A\\a\\ \\3\\φ\\«</p>"
+    },
+    {
+      "Name": "Example 209",
+      "Markdown": "\\*not emphasized*\n\\<br/> not a tag\n\\[not a link](/foo)\n\\`not code`\n1\\. not a list\n\\* not a list\n\\# not a header\n\\[foo]: /url \"not a reference\"",
+      "HTML": "<p>*not emphasized*\n&lt;br/&gt; not a tag\n[not a link](/foo)\n`not code`\n1. not a list\n* not a list\n# not a header\n[foo]: /url &quot;not a reference&quot;</p>"
+    },
+    {
+      "Name": "Example 210",
+      "Markdown": "\\\\*emphasis*",
+      "HTML": "<p>\\<em>emphasis</em></p>"
+    },
+    {
+      "Name": "Example 211",
+      "Markdown": "foo\\\nbar",
+      "HTML": "<p>foo<br />\nbar</p>"
+    },
+    {
+      "Name": "Example 212",
+      "Markdown": "`` \\[\\` ``",
+      "HTML": "<p><code>\\[\\`</code></p>"
+    },
+    {
+      "Name": "Example 213",
+      "Markdown": "    \\[\\]",
+      "HTML": "<pre><code>\\[\\]\n</code></pre>"
+    },
+    {
+      "Name": "Example 214",
+      "Markdown": "~~~\n\\[\\]\n~~~",
+      "HTML": "<pre><code>\\[\\]\n</code></pre>"
+    },
+    {
+      "Name": "Example 215",
+      "Markdown": "<http://google.com?find=\\*>",
+      "HTML": "<p><a href=\"http://google.com?find=\\*\">http://google.com?find=\\*</a></p>"
+    },
+    {
+      "Name": "Example 216",
+      "Markdown": "<a href=\"/bar\\/)\">",
+      "HTML": "<p><a href=\"/bar\\/)\"></p>"
+    },
+    {
+      "Name": "Example 217",
+      "Markdown": "[foo](/bar\\* \"ti\\*tle\")",
+      "HTML": "<p><a href=\"/bar*\" title=\"ti*tle\">foo</a></p>"
+    },
+    {
+      "Name": "Example 218",
+      "Markdown": "[foo]\n\n[foo]: /bar\\* \"ti\\*tle\"",
+      "HTML": "<p><a href=\"/bar*\" title=\"ti*tle\">foo</a></p>"
+    },
+    {
+      "Name": "Example 219",
+      "Markdown": "``` foo\\+bar\nfoo\n```",
+      "HTML": "<pre><code class=\"language-foo+bar\">foo\n</code></pre>"
+    },
+    {
+      "Name": "Example 220",
+      "Markdown": "&nbsp; &amp; &copy; &AElig; &Dcaron; &frac34; &HilbertSpace; &DifferentialD; &ClockwiseContourIntegral;",
+      "HTML": "<p>&nbsp; &amp; &copy; &AElig; &Dcaron; &frac34; &HilbertSpace; &DifferentialD; &ClockwiseContourIntegral;</p>"
+    },
+    {
+      "Name": "Example 221",
+      "Markdown": "&#1; &#35; &#1234; &#992; &#98765432;",
+      "HTML": "<p>&#1; &#35; &#1234; &#992; &#98765432;</p>"
+    },
+    {
+      "Name": "Example 222",
+      "Markdown": "&#x1; &#X22; &#XD06; &#xcab;",
+      "HTML": "<p>&#x1; &#X22; &#XD06; &#xcab;</p>"
+    },
+    {
+      "Name": "Example 223",
+      "Markdown": "&nbsp &x; &#; &#x; &#123456789; &ThisIsWayTooLongToBeAnEntityIsntIt; &hi?;",
+      "HTML": "<p>&amp;nbsp &amp;x; &amp;#; &amp;#x; &amp;#123456789; &amp;ThisIsWayTooLongToBeAnEntityIsntIt; &amp;hi?;</p>"
+    },
+    {
+      "Name": "Example 224",
+      "Markdown": "&copy",
+      "HTML": "<p>&amp;copy</p>"
+    },
+    {
+      "Name": "Example 225",
+      "Markdown": "&MadeUpEntity;",
+      "HTML": "<p>&MadeUpEntity;</p>"
+    },
+    {
+      "Name": "Example 226",
+      "Markdown": "<a href=\"&ouml;&ouml;.html\">",
+      "HTML": "<p><a href=\"&ouml;&ouml;.html\"></p>"
+    },
+    {
+      "Name": "Example 227",
+      "Markdown": "[foo](/f&ouml;&ouml; \"f&ouml;&ouml;\")",
+      "HTML": "<p><a href=\"/f&ouml;&ouml;\" title=\"f&ouml;&ouml;\">foo</a></p>"
+    },
+    {
+      "Name": "Example 228",
+      "Markdown": "[foo]\n\n[foo]: /f&ouml;&ouml; \"f&ouml;&ouml;\"",
+      "HTML": "<p><a href=\"/f&ouml;&ouml;\" title=\"f&ouml;&ouml;\">foo</a></p>"
+    },
+    {
+      "Name": "Example 229",
+      "Markdown": "``` f&ouml;&ouml;\nfoo\n```",
+      "HTML": "<pre><code class=\"language-f&ouml;&ouml;\">foo\n</code></pre>"
+    },
+    {
+      "Name": "Example 230",
+      "Markdown": "`f&ouml;&ouml;`",
+      "HTML": "<p><code>f&amp;ouml;&amp;ouml;</code></p>"
+    },
+    {
+      "Name": "Example 231",
+      "Markdown": "    f&ouml;f&ouml;",
+      "HTML": "<pre><code>f&amp;ouml;f&amp;ouml;\n</code></pre>"
+    },
+    {
+      "Name": "Example 232",
+      "Markdown": "`foo`",
+      "HTML": "<p><code>foo</code></p>"
+    },
+    {
+      "Name": "Example 233",
+      "Markdown": "`` foo ` bar  ``",
+      "HTML": "<p><code>foo ` bar</code></p>"
+    },
+    {
+      "Name": "Example 234",
+      "Markdown": "` `` `",
+      "HTML": "<p><code>``</code></p>"
+    },
+    {
+      "Name": "Example 235",
+      "Markdown": "``\nfoo\n``",
+      "HTML": "<p><code>foo</code></p>"
+    },
+    {
+      "Name": "Example 236",
+      "Markdown": "`foo   bar\n  baz`",
+      "HTML": "<p><code>foo bar baz</code></p>"
+    },
+    {
+      "Name": "Example 237",
+      "Markdown": "`foo `` bar`",
+      "HTML": "<p><code>foo `` bar</code></p>"
+    },
+    {
+      "Name": "Example 238",
+      "Markdown": "`foo\\`bar`",
+      "HTML": "<p><code>foo\\</code>bar`</p>"
+    },
+    {
+      "Name": "Example 239",
+      "Markdown": "*foo`*`",
+      "HTML": "<p>*foo<code>*</code></p>"
+    },
+    {
+      "Name": "Example 240",
+      "Markdown": "[not a `link](/foo`)",
+      "HTML": "<p>[not a <code>link](/foo</code>)</p>"
+    },
+    {
+      "Name": "Example 241",
+      "Markdown": "<http://foo.bar.`baz>`",
+      "HTML": "<p><a href=\"http://foo.bar.`baz\">http://foo.bar.`baz</a>`</p>"
+    },
+    {
+      "Name": "Example 242",
+      "Markdown": "<a href=\"`\">`",
+      "HTML": "<p><a href=\"`\">`</p>"
+    },
+    {
+      "Name": "Example 243",
+      "Markdown": "```foo``",
+      "HTML": "<p>```foo``</p>"
+    },
+    {
+      "Name": "Example 244",
+      "Markdown": "`foo",
+      "HTML": "<p>`foo</p>"
+    },
+    {
+      "Name": "Example 245",
+      "Markdown": "*foo bar*",
+      "HTML": "<p><em>foo bar</em></p>"
+    },
+    {
+      "Name": "Example 246",
+      "Markdown": "_foo bar_",
+      "HTML": "<p><em>foo bar</em></p>"
+    },
+    {
+      "Name": "Example 247",
+      "Markdown": "**foo bar**",
+      "HTML": "<p><strong>foo bar</strong></p>"
+    },
+    {
+      "Name": "Example 248",
+      "Markdown": "__foo bar__",
+      "HTML": "<p><strong>foo bar</strong></p>"
+    },
+    {
+      "Name": "Example 249",
+      "Markdown": "*foo\nbar*",
+      "HTML": "<p><em>foo\nbar</em></p>"
+    },
+    {
+      "Name": "Example 250",
+      "Markdown": "_foo\nbar_",
+      "HTML": "<p><em>foo\nbar</em></p>"
+    },
+    {
+      "Name": "Example 251",
+      "Markdown": "**foo\nbar**",
+      "HTML": "<p><strong>foo\nbar</strong></p>"
+    },
+    {
+      "Name": "Example 252",
+      "Markdown": "__foo\nbar__",
+      "HTML": "<p><strong>foo\nbar</strong></p>"
+    },
+    {
+      "Name": "Example 253",
+      "Markdown": "*foo [bar](/url)*",
+      "HTML": "<p><em>foo <a href=\"/url\">bar</a></em></p>"
+    },
+    {
+      "Name": "Example 254",
+      "Markdown": "_foo [bar](/url)_",
+      "HTML": "<p><em>foo <a href=\"/url\">bar</a></em></p>"
+    },
+    {
+      "Name": "Example 255",
+      "Markdown": "**foo [bar](/url)**",
+      "HTML": "<p><strong>foo <a href=\"/url\">bar</a></strong></p>"
+    },
+    {
+      "Name": "Example 256",
+      "Markdown": "__foo [bar](/url)__",
+      "HTML": "<p><strong>foo <a href=\"/url\">bar</a></strong></p>"
+    },
+    {
+      "Name": "Example 257",
+      "Markdown": "*foo [bar*](/url)",
+      "HTML": "<p>*foo <a href=\"/url\">bar*</a></p>"
+    },
+    {
+      "Name": "Example 258",
+      "Markdown": "_foo [bar_](/url)",
+      "HTML": "<p>_foo <a href=\"/url\">bar_</a></p>"
+    },
+    {
+      "Name": "Example 259",
+      "Markdown": "**<a href=\"**\">",
+      "HTML": "<p>**<a href=\"**\"></p>"
+    },
+    {
+      "Name": "Example 260",
+      "Markdown": "__<a href=\"__\">",
+      "HTML": "<p>__<a href=\"__\"></p>"
+    },
+    {
+      "Name": "Example 261",
+      "Markdown": "*a `*`*",
+      "HTML": "<p><em>a <code>*</code></em></p>"
+    },
+    {
+      "Name": "Example 262",
+      "Markdown": "_a `_`_",
+      "HTML": "<p><em>a <code>_</code></em></p>"
+    },
+    {
+      "Name": "Example 263",
+      "Markdown": "**a<http://foo.bar?q=**>",
+      "HTML": "<p>**a<a href=\"http://foo.bar?q=**\">http://foo.bar?q=**</a></p>"
+    },
+    {
+      "Name": "Example 264",
+      "Markdown": "__a<http://foo.bar?q=__>",
+      "HTML": "<p>__a<a href=\"http://foo.bar?q=__\">http://foo.bar?q=__</a></p>"
+    },
+    {
+      "Name": "Example 265",
+      "Markdown": "and * foo bar*",
+      "HTML": "<p>and * foo bar*</p>"
+    },
+    {
+      "Name": "Example 266",
+      "Markdown": "_ foo bar_",
+      "HTML": "<p>_ foo bar_</p>"
+    },
+    {
+      "Name": "Example 267",
+      "Markdown": "and ** foo bar**",
+      "HTML": "<p>and ** foo bar**</p>"
+    },
+    {
+      "Name": "Example 268",
+      "Markdown": "__ foo bar__",
+      "HTML": "<p>__ foo bar__</p>"
+    },
+    {
+      "Name": "Example 269",
+      "Markdown": "and *foo bar *",
+      "HTML": "<p>and *foo bar *</p>"
+    },
+    {
+      "Name": "Example 270",
+      "Markdown": "and _foo bar _",
+      "HTML": "<p>and _foo bar _</p>"
+    },
+    {
+      "Name": "Example 271",
+      "Markdown": "and **foo bar **",
+      "HTML": "<p>and **foo bar **</p>"
+    },
+    {
+      "Name": "Example 272",
+      "Markdown": "and __foo bar __",
+      "HTML": "<p>and __foo bar __</p>"
+    },
+    {
+      "Name": "Example 273",
+      "Markdown": "****hi****",
+      "HTML": "<p>****hi****</p>"
+    },
+    {
+      "Name": "Example 274",
+      "Markdown": "_____hi_____",
+      "HTML": "<p>_____hi_____</p>"
+    },
+    {
+      "Name": "Example 275",
+      "Markdown": "Sign here: _________",
+      "HTML": "<p>Sign here: _________</p>"
+    },
+    {
+      "Name": "Example 276",
+      "Markdown": "** is not an empty emphasis",
+      "HTML": "<p>** is not an empty emphasis</p>"
+    },
+    {
+      "Name": "Example 277",
+      "Markdown": "**** is not an empty strong emphasis",
+      "HTML": "<p>**** is not an empty strong emphasis</p>"
+    },
+    {
+      "Name": "Example 278",
+      "Markdown": "*here is a \\**",
+      "HTML": "<p><em>here is a *</em></p>"
+    },
+    {
+      "Name": "Example 279",
+      "Markdown": "__this is a double underscore (`__`)__",
+      "HTML": "<p><strong>this is a double underscore (<code>__</code>)</strong></p>"
+    },
+    {
+      "Name": "Example 280",
+      "Markdown": "foo*bar*baz",
+      "HTML": "<p>foo<em>bar</em>baz</p>"
+    },
+    {
+      "Name": "Example 281",
+      "Markdown": "foo_bar_baz",
+      "HTML": "<p>foo_bar_baz</p>"
+    },
+    {
+      "Name": "Example 282",
+      "Markdown": "foo__bar__baz",
+      "HTML": "<p>foo__bar__baz</p>"
+    },
+    {
+      "Name": "Example 283",
+      "Markdown": "_foo_bar_baz_",
+      "HTML": "<p><em>foo_bar_baz</em></p>"
+    },
+    {
+      "Name": "Example 284",
+      "Markdown": "11*15*32",
+      "HTML": "<p>11<em>15</em>32</p>"
+    },
+    {
+      "Name": "Example 285",
+      "Markdown": "11_15_32",
+      "HTML": "<p>11_15_32</p>"
+    },
+    {
+      "Name": "Example 286",
+      "Markdown": "_foo_bar_baz_",
+      "HTML": "<p><em>foo_bar_baz</em></p>"
+    },
+    {
+      "Name": "Example 287",
+      "Markdown": "__foo__bar__baz__",
+      "HTML": "<p><strong>foo__bar__baz</strong></p>"
+    },
+    {
+      "Name": "Example 288",
+      "Markdown": "***foo bar***",
+      "HTML": "<p><strong><em>foo bar</em></strong></p>"
+    },
+    {
+      "Name": "Example 289",
+      "Markdown": "___foo bar___",
+      "HTML": "<p><strong><em>foo bar</em></strong></p>"
+    },
+    {
+      "Name": "Example 290",
+      "Markdown": "***foo** bar*",
+      "HTML": "<p><em><strong>foo</strong> bar</em></p>"
+    },
+    {
+      "Name": "Example 291",
+      "Markdown": "___foo__ bar_",
+      "HTML": "<p><em><strong>foo</strong> bar</em></p>"
+    },
+    {
+      "Name": "Example 292",
+      "Markdown": "***foo* bar**",
+      "HTML": "<p><strong><em>foo</em> bar</strong></p>"
+    },
+    {
+      "Name": "Example 293",
+      "Markdown": "___foo_ bar__",
+      "HTML": "<p><strong><em>foo</em> bar</strong></p>"
+    },
+    {
+      "Name": "Example 294",
+      "Markdown": "*foo **bar***",
+      "HTML": "<p><em>foo <strong>bar</strong></em></p>"
+    },
+    {
+      "Name": "Example 295",
+      "Markdown": "_foo __bar___",
+      "HTML": "<p><em>foo <strong>bar</strong></em></p>"
+    },
+    {
+      "Name": "Example 296",
+      "Markdown": "**foo *bar***",
+      "HTML": "<p><strong>foo <em>bar</em></strong></p>"
+    },
+    {
+      "Name": "Example 297",
+      "Markdown": "__foo _bar___",
+      "HTML": "<p><strong>foo <em>bar</em></strong></p>"
+    },
+    {
+      "Name": "Example 298",
+      "Markdown": "*foo **bar***",
+      "HTML": "<p><em>foo <strong>bar</strong></em></p>"
+    },
+    {
+      "Name": "Example 299",
+      "Markdown": "_foo __bar___",
+      "HTML": "<p><em>foo <strong>bar</strong></em></p>"
+    },
+    {
+      "Name": "Example 300",
+      "Markdown": "*foo *bar* baz*",
+      "HTML": "<p><em>foo <em>bar</em> baz</em></p>"
+    },
+    {
+      "Name": "Example 301",
+      "Markdown": "_foo _bar_ baz_",
+      "HTML": "<p><em>foo <em>bar</em> baz</em></p>"
+    },
+    {
+      "Name": "Example 302",
+      "Markdown": "**foo **bar** baz**",
+      "HTML": "<p><strong>foo <strong>bar</strong> baz</strong></p>"
+    },
+    {
+      "Name": "Example 303",
+      "Markdown": "__foo __bar__ baz__",
+      "HTML": "<p><strong>foo <strong>bar</strong> baz</strong></p>"
+    },
+    {
+      "Name": "Example 304",
+      "Markdown": "*foo **bar** baz*",
+      "HTML": "<p><em>foo <strong>bar</strong> baz</em></p>"
+    },
+    {
+      "Name": "Example 305",
+      "Markdown": "_foo __bar__ baz_",
+      "HTML": "<p><em>foo <strong>bar</strong> baz</em></p>"
+    },
+    {
+      "Name": "Example 306",
+      "Markdown": "**foo *bar* baz**",
+      "HTML": "<p><strong>foo <em>bar</em> baz</strong></p>"
+    },
+    {
+      "Name": "Example 307",
+      "Markdown": "__foo _bar_ baz__",
+      "HTML": "<p><strong>foo <em>bar</em> baz</strong></p>"
+    },
+    {
+      "Name": "Example 308",
+      "Markdown": "**foo**",
+      "HTML": "<p><strong>foo</strong></p>"
+    },
+    {
+      "Name": "Example 309",
+      "Markdown": "****foo****",
+      "HTML": "<p>****foo****</p>"
+    },
+    {
+      "Name": "Example 310",
+      "Markdown": "*_foo_*",
+      "HTML": "<p><em><em>foo</em></em></p>"
+    },
+    {
+      "Name": "Example 311",
+      "Markdown": "**__foo__**",
+      "HTML": "<p><strong><strong>foo</strong></strong></p>"
+    },
+    {
+      "Name": "Example 312",
+      "Markdown": "*foo**",
+      "HTML": "<p><em>foo</em>*</p>"
+    },
+    {
+      "Name": "Example 313",
+      "Markdown": "*foo *bar**",
+      "HTML": "<p><em>foo <em>bar</em></em></p>"
+    },
+    {
+      "Name": "Example 314",
+      "Markdown": "**foo***",
+      "HTML": "<p><strong>foo</strong>*</p>"
+    },
+    {
+      "Name": "Example 315",
+      "Markdown": "***foo* bar***",
+      "HTML": "<p><strong><em>foo</em> bar</strong>*</p>"
+    },
+    {
+      "Name": "Example 316",
+      "Markdown": "***foo** bar***",
+      "HTML": "<p><em><strong>foo</strong> bar</em>**</p>"
+    },
+    {
+      "Name": "Example 317",
+      "Markdown": "*foo**bar***",
+      "HTML": "<p><em>foo</em><em>bar</em>**</p>"
+    },
+    {
+      "Name": "Example 318",
+      "Markdown": "*foo****",
+      "HTML": "<p>*foo****</p>"
+    },
+    {
+      "Name": "Example 319",
+      "Markdown": "*foo**\n\n**foo*",
+      "HTML": "<p><em>foo</em>*</p>\n<p>**foo*</p>"
+    },
+    {
+      "Name": "Example 320",
+      "Markdown": "*foo *bar**\n\n**foo* bar*",
+      "HTML": "<p><em>foo <em>bar</em></em></p>\n<p>**foo* bar*</p>"
+    },
+    {
+      "Name": "Example 321",
+      "Markdown": "**foo* bar*",
+      "HTML": "<p>**foo* bar*</p>"
+    },
+    {
+      "Name": "Example 322",
+      "Markdown": "*bar***",
+      "HTML": "<p><em>bar</em>**</p>"
+    },
+    {
+      "Name": "Example 323",
+      "Markdown": "***foo*",
+      "HTML": "<p>***foo*</p>"
+    },
+    {
+      "Name": "Example 324",
+      "Markdown": "**bar***",
+      "HTML": "<p><strong>bar</strong>*</p>"
+    },
+    {
+      "Name": "Example 325",
+      "Markdown": "***foo**",
+      "HTML": "<p>***foo**</p>"
+    },
+    {
+      "Name": "Example 326",
+      "Markdown": "***foo *bar*",
+      "HTML": "<p>***foo <em>bar</em></p>"
+    },
+    {
+      "Name": "Example 327",
+      "Markdown": "[link](/uri \"title\")",
+      "HTML": "<p><a href=\"/uri\" title=\"title\">link</a></p>"
+    },
+    {
+      "Name": "Example 328",
+      "Markdown": "[link](/uri)",
+      "HTML": "<p><a href=\"/uri\">link</a></p>"
+    },
+    {
+      "Name": "Example 329",
+      "Markdown": "[link]()",
+      "HTML": "<p><a href=\"\">link</a></p>"
+    },
+    {
+      "Name": "Example 330",
+      "Markdown": "[link](<>)",
+      "HTML": "<p><a href=\"\">link</a></p>"
+    },
+    {
+      "Name": "Example 331",
+      "Markdown": "[link](/my uri)",
+      "HTML": "<p>[link](/my uri)</p>"
+    },
+    {
+      "Name": "Example 332",
+      "Markdown": "[link](</my uri>)",
+      "HTML": "<p><a href=\"/my uri\">link</a></p>"
+    },
+    {
+      "Name": "Example 333",
+      "Markdown": "[link](foo\nbar)",
+      "HTML": "<p>[link](foo\nbar)</p>"
+    },
+    {
+      "Name": "Example 334",
+      "Markdown": "[link]((foo)and(bar))",
+      "HTML": "<p><a href=\"(foo)and(bar)\">link</a></p>"
+    },
+    {
+      "Name": "Example 335",
+      "Markdown": "[link](foo(and(bar)))",
+      "HTML": "<p>[link](foo(and(bar)))</p>"
+    },
+    {
+      "Name": "Example 336",
+      "Markdown": "[link](foo(and\\(bar\\)))",
+      "HTML": "<p><a href=\"foo(and(bar))\">link</a></p>"
+    },
+    {
+      "Name": "Example 337",
+      "Markdown": "[link](<foo(and(bar))>)",
+      "HTML": "<p><a href=\"foo(and(bar))\">link</a></p>"
+    },
+    {
+      "Name": "Example 338",
+      "Markdown": "[link](foo\\)\\:)",
+      "HTML": "<p><a href=\"foo):\">link</a></p>"
+    },
+    {
+      "Name": "Example 339",
+      "Markdown": "[link](foo%20b&auml;)",
+      "HTML": "<p><a href=\"foo%20b&auml;\">link</a></p>"
+    },
+    {
+      "Name": "Example 340",
+      "Markdown": "[link](\"title\")",
+      "HTML": "<p><a href=\"&quot;title&quot;\">link</a></p>"
+    },
+    {
+      "Name": "Example 341",
+      "Markdown": "[link](/url \"title\")\n[link](/url 'title')\n[link](/url (title))",
+      "HTML": "<p><a href=\"/url\" title=\"title\">link</a>\n<a href=\"/url\" title=\"title\">link</a>\n<a href=\"/url\" title=\"title\">link</a></p>"
+    },
+    {
+      "Name": "Example 342",
+      "Markdown": "[link](/url \"title \\\"&quot;\")",
+      "HTML": "<p><a href=\"/url\" title=\"title &quot;&quot;\">link</a></p>"
+    },
+    {
+      "Name": "Example 343",
+      "Markdown": "[link](/url \"title \"and\" title\")",
+      "HTML": "<p>[link](/url &quot;title &quot;and&quot; title&quot;)</p>"
+    },
+    {
+      "Name": "Example 344",
+      "Markdown": "[link](/url 'title \"and\" title')",
+      "HTML": "<p><a href=\"/url\" title=\"title &quot;and&quot; title\">link</a></p>"
+    },
+    {
+      "Name": "Example 345",
+      "Markdown": "[link](   /uri\n  \"title\"  )",
+      "HTML": "<p><a href=\"/uri\" title=\"title\">link</a></p>"
+    },
+    {
+      "Name": "Example 346",
+      "Markdown": "[link] (/uri)",
+      "HTML": "<p>[link] (/uri)</p>"
+    },
+    {
+      "Name": "Example 347",
+      "Markdown": "[foo <bar attr=\"](baz)\">",
+      "HTML": "<p>[foo <bar attr=\"](baz)\"></p>"
+    },
+    {
+      "Name": "Example 348",
+      "Markdown": "[foo][bar]\n\n[bar]: /url \"title\"",
+      "HTML": "<p><a href=\"/url\" title=\"title\">foo</a></p>"
+    },
+    {
+      "Name": "Example 349",
+      "Markdown": "[*foo\\!*][bar]\n\n[bar]: /url \"title\"",
+      "HTML": "<p><a href=\"/url\" title=\"title\"><em>foo!</em></a></p>"
+    },
+    {
+      "Name": "Example 350",
+      "Markdown": "[foo][BaR]\n\n[bar]: /url \"title\"",
+      "HTML": "<p><a href=\"/url\" title=\"title\">foo</a></p>"
+    },
+    {
+      "Name": "Example 351",
+      "Markdown": "[Толпой][Толпой] is a Russian word.\n\n[ТОЛПОЙ]: /url",
+      "HTML": "<p><a href=\"/url\">Толпой</a> is a Russian word.</p>"
+    },
+    {
+      "Name": "Example 352",
+      "Markdown": "[Foo\n  bar]: /url\n\n[Baz][Foo bar]",
+      "HTML": "<p><a href=\"/url\">Baz</a></p>"
+    },
+    {
+      "Name": "Example 353",
+      "Markdown": "[foo] [bar]\n\n[bar]: /url \"title\"",
+      "HTML": "<p><a href=\"/url\" title=\"title\">foo</a></p>"
+    },
+    {
+      "Name": "Example 354",
+      "Markdown": "[foo]\n[bar]\n\n[bar]: /url \"title\"",
+      "HTML": "<p><a href=\"/url\" title=\"title\">foo</a></p>"
+    },
+    {
+      "Name": "Example 355",
+      "Markdown": "[foo]: /url1\n\n[foo]: /url2\n\n[bar][foo]",
+      "HTML": "<p><a href=\"/url1\">bar</a></p>"
+    },
+    {
+      "Name": "Example 356",
+      "Markdown": "[bar][foo\\!]\n\n[foo!]: /url",
+      "HTML": "<p>[bar][foo!]</p>"
+    },
+    {
+      "Name": "Example 357",
+      "Markdown": "[foo][]\n\n[foo]: /url \"title\"",
+      "HTML": "<p><a href=\"/url\" title=\"title\">foo</a></p>"
+    },
+    {
+      "Name": "Example 358",
+      "Markdown": "[*foo* bar][]\n\n[*foo* bar]: /url \"title\"",
+      "HTML": "<p><a href=\"/url\" title=\"title\"><em>foo</em> bar</a></p>"
+    },
+    {
+      "Name": "Example 359",
+      "Markdown": "[Foo][]\n\n[foo]: /url \"title\"",
+      "HTML": "<p><a href=\"/url\" title=\"title\">Foo</a></p>"
+    },
+    {
+      "Name": "Example 360",
+      "Markdown": "[foo] \n[]\n\n[foo]: /url \"title\"",
+      "HTML": "<p><a href=\"/url\" title=\"title\">foo</a></p>"
+    },
+    {
+      "Name": "Example 361",
+      "Markdown": "[foo]\n\n[foo]: /url \"title\"",
+      "HTML": "<p><a href=\"/url\" title=\"title\">foo</a></p>"
+    },
+    {
+      "Name": "Example 362",
+      "Markdown": "[*foo* bar]\n\n[*foo* bar]: /url \"title\"",
+      "HTML": "<p><a href=\"/url\" title=\"title\"><em>foo</em> bar</a></p>"
+    },
+    {
+      "Name": "Example 363",
+      "Markdown": "[[*foo* bar]]\n\n[*foo* bar]: /url \"title\"",
+      "HTML": "<p>[<a href=\"/url\" title=\"title\"><em>foo</em> bar</a>]</p>"
+    },
+    {
+      "Name": "Example 364",
+      "Markdown": "[Foo]\n\n[foo]: /url \"title\"",
+      "HTML": "<p><a href=\"/url\" title=\"title\">Foo</a></p>"
+    },
+    {
+      "Name": "Example 365",
+      "Markdown": "\\[foo]\n\n[foo]: /url \"title\"",
+      "HTML": "<p>[foo]</p>"
+    },
+    {
+      "Name": "Example 366",
+      "Markdown": "[foo*]: /url\n\n*[foo*]",
+      "HTML": "<p>*<a href=\"/url\">foo*</a></p>"
+    },
+    {
+      "Name": "Example 367",
+      "Markdown": "[foo`]: /url\n\n[foo`]`",
+      "HTML": "<p>[foo<code>]</code></p>"
+    },
+    {
+      "Name": "Example 368",
+      "Markdown": "[[[foo]]]\n\n[[[foo]]]: /url",
+      "HTML": "<p><a href=\"/url\">[[foo]]</a></p>"
+    },
+    {
+      "Name": "Example 369",
+      "Markdown": "[[[foo]]]\n\n[[[foo]]]: /url1\n[foo]: /url2",
+      "HTML": "<p><a href=\"/url1\">[[foo]]</a></p>"
+    },
+    {
+      "Name": "Example 370",
+      "Markdown": "[\\[foo]\n\n[\\[foo]: /url",
+      "HTML": "<p><a href=\"/url\">[foo</a></p>"
+    },
+    {
+      "Name": "Example 371",
+      "Markdown": "[foo][bar]\n\n[foo]: /url1\n[bar]: /url2",
+      "HTML": "<p><a href=\"/url2\">foo</a></p>"
+    },
+    {
+      "Name": "Example 372",
+      "Markdown": "[foo][bar][baz]\n\n[baz]: /url",
+      "HTML": "<p>[foo]<a href=\"/url\">bar</a></p>"
+    },
+    {
+      "Name": "Example 373",
+      "Markdown": "[foo][bar][baz]\n\n[baz]: /url1\n[bar]: /url2",
+      "HTML": "<p><a href=\"/url2\">foo</a><a href=\"/url1\">baz</a></p>"
+    },
+    {
+      "Name": "Example 374",
+      "Markdown": "[foo][bar][baz]\n\n[baz]: /url1\n[foo]: /url2",
+      "HTML": "<p>[foo]<a href=\"/url1\">bar</a></p>"
+    },
+    {
+      "Name": "Example 375",
+      "Markdown": "![foo](/url \"title\")",
+      "HTML": "<p><img src=\"/url\" alt=\"foo\" title=\"title\" /></p>"
+    },
+    {
+      "Name": "Example 376",
+      "Markdown": "![foo *bar*]\n\n[foo *bar*]: train.jpg \"train & tracks\"",
+      "HTML": "<p><img src=\"train.jpg\" alt=\"foo &lt;em&gt;bar&lt;/em&gt;\" title=\"train &amp; tracks\" /></p>"
+    },
+    {
+      "Name": "Example 377",
+      "Markdown": "![foo *bar*][]\n\n[foo *bar*]: train.jpg \"train & tracks\"",
+      "HTML": "<p><img src=\"train.jpg\" alt=\"foo &lt;em&gt;bar&lt;/em&gt;\" title=\"train &amp; tracks\" /></p>"
+    },
+    {
+      "Name": "Example 378",
+      "Markdown": "![foo *bar*][foobar]\n\n[FOOBAR]: train.jpg \"train & tracks\"",
+      "HTML": "<p><img src=\"train.jpg\" alt=\"foo &lt;em&gt;bar&lt;/em&gt;\" title=\"train &amp; tracks\" /></p>"
+    },
+    {
+      "Name": "Example 379",
+      "Markdown": "![foo](train.jpg)",
+      "HTML": "<p><img src=\"train.jpg\" alt=\"foo\" /></p>"
+    },
+    {
+      "Name": "Example 380",
+      "Markdown": "My ![foo bar](/path/to/train.jpg  \"title\"   )",
+      "HTML": "<p>My <img src=\"/path/to/train.jpg\" alt=\"foo bar\" title=\"title\" /></p>"
+    },
+    {
+      "Name": "Example 381",
+      "Markdown": "![foo](<url>)",
+      "HTML": "<p><img src=\"url\" alt=\"foo\" /></p>"
+    },
+    {
+      "Name": "Example 382",
+      "Markdown": "![](/url)",
+      "HTML": "<p><img src=\"/url\" alt=\"\" /></p>"
+    },
+    {
+      "Name": "Example 383",
+      "Markdown": "![foo] [bar]\n\n[bar]: /url",
+      "HTML": "<p><img src=\"/url\" alt=\"foo\" /></p>"
+    },
+    {
+      "Name": "Example 384",
+      "Markdown": "![foo] [bar]\n\n[BAR]: /url",
+      "HTML": "<p><img src=\"/url\" alt=\"foo\" /></p>"
+    },
+    {
+      "Name": "Example 385",
+      "Markdown": "![foo][]\n\n[foo]: /url \"title\"",
+      "HTML": "<p><img src=\"/url\" alt=\"foo\" title=\"title\" /></p>"
+    },
+    {
+      "Name": "Example 386",
+      "Markdown": "![*foo* bar][]\n\n[*foo* bar]: /url \"title\"",
+      "HTML": "<p><img src=\"/url\" alt=\"&lt;em&gt;foo&lt;/em&gt; bar\" title=\"title\" /></p>"
+    },
+    {
+      "Name": "Example 387",
+      "Markdown": "![Foo][]\n\n[foo]: /url \"title\"",
+      "HTML": "<p><img src=\"/url\" alt=\"Foo\" title=\"title\" /></p>"
+    },
+    {
+      "Name": "Example 388",
+      "Markdown": "![foo] \n[]\n\n[foo]: /url \"title\"",
+      "HTML": "<p><img src=\"/url\" alt=\"foo\" title=\"title\" /></p>"
+    },
+    {
+      "Name": "Example 389",
+      "Markdown": "![foo]\n\n[foo]: /url \"title\"",
+      "HTML": "<p><img src=\"/url\" alt=\"foo\" title=\"title\" /></p>"
+    },
+    {
+      "Name": "Example 390",
+      "Markdown": "![*foo* bar]\n\n[*foo* bar]: /url \"title\"",
+      "HTML": "<p><img src=\"/url\" alt=\"&lt;em&gt;foo&lt;/em&gt; bar\" title=\"title\" /></p>"
+    },
+    {
+      "Name": "Example 391",
+      "Markdown": "![[foo]]\n\n[[foo]]: /url \"title\"",
+      "HTML": "<p><img src=\"/url\" alt=\"[foo]\" title=\"title\" /></p>"
+    },
+    {
+      "Name": "Example 392",
+      "Markdown": "![Foo]\n\n[foo]: /url \"title\"",
+      "HTML": "<p><img src=\"/url\" alt=\"Foo\" title=\"title\" /></p>"
+    },
+    {
+      "Name": "Example 393",
+      "Markdown": "\\!\\[foo]\n\n[foo]: /url \"title\"",
+      "HTML": "<p>![foo]</p>"
+    },
+    {
+      "Name": "Example 394",
+      "Markdown": "\\![foo]\n\n[foo]: /url \"title\"",
+      "HTML": "<p>!<a href=\"/url\" title=\"title\">foo</a></p>"
+    },
+    {
+      "Name": "Example 395",
+      "Markdown": "<http://foo.bar.baz>",
+      "HTML": "<p><a href=\"http://foo.bar.baz\">http://foo.bar.baz</a></p>"
+    },
+    {
+      "Name": "Example 396",
+      "Markdown": "<http://foo.bar.baz?q=hello&id=22&boolean>",
+      "HTML": "<p><a href=\"http://foo.bar.baz?q=hello&amp;id=22&amp;boolean\">http://foo.bar.baz?q=hello&amp;id=22&amp;boolean</a></p>"
+    },
+    {
+      "Name": "Example 397",
+      "Markdown": "<irc://foo.bar:2233/baz>",
+      "HTML": "<p><a href=\"irc://foo.bar:2233/baz\">irc://foo.bar:2233/baz</a></p>"
+    },
+    {
+      "Name": "Example 398",
+      "Markdown": "<MAILTO:FOO@BAR.BAZ>",
+      "HTML": "<p><a href=\"MAILTO:FOO@BAR.BAZ\">MAILTO:FOO@BAR.BAZ</a></p>"
+    },
+    {
+      "Name": "Example 399",
+      "Markdown": "<http://foo.bar/baz bim>",
+      "HTML": "<p>&lt;http://foo.bar/baz bim&gt;</p>"
+    },
+    {
+      "Name": "Example 400",
+      "Markdown": "<foo@bar.baz.com>",
+      "HTML": "<p><a href=\"mailto:foo@bar.baz.com\">foo@bar.baz.com</a></p>"
+    },
+    {
+      "Name": "Example 401",
+      "Markdown": "<foo+special@Bar.baz-bar0.com>",
+      "HTML": "<p><a href=\"mailto:foo+special@Bar.baz-bar0.com\">foo+special@Bar.baz-bar0.com</a></p>"
+    },
+    {
+      "Name": "Example 402",
+      "Markdown": "<>",
+      "HTML": "<p>&lt;&gt;</p>"
+    },
+    {
+      "Name": "Example 403",
+      "Markdown": "<heck://bing.bong>",
+      "HTML": "<p>&lt;heck://bing.bong&gt;</p>"
+    },
+    {
+      "Name": "Example 404",
+      "Markdown": "< http://foo.bar >",
+      "HTML": "<p>&lt; http://foo.bar &gt;</p>"
+    },
+    {
+      "Name": "Example 405",
+      "Markdown": "<foo.bar.baz>",
+      "HTML": "<p>&lt;foo.bar.baz&gt;</p>"
+    },
+    {
+      "Name": "Example 406",
+      "Markdown": "<localhost:5001/foo>",
+      "HTML": "<p>&lt;localhost:5001/foo&gt;</p>"
+    },
+    {
+      "Name": "Example 407",
+      "Markdown": "http://google.com",
+      "HTML": "<p>http://google.com</p>"
+    },
+    {
+      "Name": "Example 408",
+      "Markdown": "foo@bar.baz.com",
+      "HTML": "<p>foo@bar.baz.com</p>"
+    },
+    {
+      "Name": "Example 409",
+      "Markdown": "<a><bab><c2c>",
+      "HTML": "<p><a><bab><c2c></p>"
+    },
+    {
+      "Name": "Example 410",
+      "Markdown": "<a/><b2/>",
+      "HTML": "<p><a/><b2/></p>"
+    },
+    {
+      "Name": "Example 411",
+      "Markdown": "<a  /><b2\ndata=\"foo\" >",
+      "HTML": "<p><a  /><b2\ndata=\"foo\" ></p>"
+    },
+    {
+      "Name": "Example 412",
+      "Markdown": "<a foo=\"bar\" bam = 'baz <em>\"</em>'\n_boolean zoop:33=zoop:33 />",
+      "HTML": "<p><a foo=\"bar\" bam = 'baz <em>\"</em>'\n_boolean zoop:33=zoop:33 /></p>"
+    },
+    {
+      "Name": "Example 413",
+      "Markdown": "<33> <__>",
+      "HTML": "<p>&lt;33&gt; &lt;__&gt;</p>"
+    },
+    {
+      "Name": "Example 414",
+      "Markdown": "<a h*#ref=\"hi\">",
+      "HTML": "<p>&lt;a h*#ref=&quot;hi&quot;&gt;</p>"
+    },
+    {
+      "Name": "Example 415",
+      "Markdown": "<a href=\"hi'> <a href=hi'>",
+      "HTML": "<p>&lt;a href=&quot;hi'&gt; &lt;a href=hi'&gt;</p>"
+    },
+    {
+      "Name": "Example 416",
+      "Markdown": "< a><\nfoo><bar/ >",
+      "HTML": "<p>&lt; a&gt;&lt;\nfoo&gt;&lt;bar/ &gt;</p>"
+    },
+    {
+      "Name": "Example 417",
+      "Markdown": "<a href='bar'title=title>",
+      "HTML": "<p>&lt;a href='bar'title=title&gt;</p>"
+    },
+    {
+      "Name": "Example 418",
+      "Markdown": "</a>\n</foo >",
+      "HTML": "<p></a>\n</foo ></p>"
+    },
+    {
+      "Name": "Example 419",
+      "Markdown": "</a href=\"foo\">",
+      "HTML": "<p>&lt;/a href=&quot;foo&quot;&gt;</p>"
+    },
+    {
+      "Name": "Example 420",
+      "Markdown": "foo <!-- this is a\ncomment - with hyphen -->",
+      "HTML": "<p>foo <!-- this is a\ncomment - with hyphen --></p>"
+    },
+    {
+      "Name": "Example 421",
+      "Markdown": "foo <!-- not a comment -- two hyphens -->",
+      "HTML": "<p>foo &lt;!-- not a comment -- two hyphens --&gt;</p>"
+    },
+    {
+      "Name": "Example 422",
+      "Markdown": "foo <?php echo $a; ?>",
+      "HTML": "<p>foo <?php echo $a; ?></p>"
+    },
+    {
+      "Name": "Example 423",
+      "Markdown": "foo <!ELEMENT br EMPTY>",
+      "HTML": "<p>foo <!ELEMENT br EMPTY></p>"
+    },
+    {
+      "Name": "Example 424",
+      "Markdown": "foo <![CDATA[>&<]]>",
+      "HTML": "<p>foo <![CDATA[>&<]]></p>"
+    },
+    {
+      "Name": "Example 425",
+      "Markdown": "<a href=\"&ouml;\">",
+      "HTML": "<p><a href=\"&ouml;\"></p>"
+    },
+    {
+      "Name": "Example 426",
+      "Markdown": "<a href=\"\\*\">",
+      "HTML": "<p><a href=\"\\*\"></p>"
+    },
+    {
+      "Name": "Example 427",
+      "Markdown": "<a href=\"\\\"\">",
+      "HTML": "<p>&lt;a href=&quot;&quot;&quot;&gt;</p>"
+    },
+    {
+      "Name": "Example 428",
+      "Markdown": "foo  \nbaz",
+      "HTML": "<p>foo<br />\nbaz</p>"
+    },
+    {
+      "Name": "Example 429",
+      "Markdown": "foo\\\nbaz",
+      "HTML": "<p>foo<br />\nbaz</p>"
+    },
+    {
+      "Name": "Example 430",
+      "Markdown": "foo       \nbaz",
+      "HTML": "<p>foo<br />\nbaz</p>"
+    },
+    {
+      "Name": "Example 431",
+      "Markdown": "foo  \n     bar",
+      "HTML": "<p>foo<br />\nbar</p>"
+    },
+    {
+      "Name": "Example 432",
+      "Markdown": "foo\\\n     bar",
+      "HTML": "<p>foo<br />\nbar</p>"
+    },
+    {
+      "Name": "Example 433",
+      "Markdown": "*foo  \nbar*",
+      "HTML": "<p><em>foo<br />\nbar</em></p>"
+    },
+    {
+      "Name": "Example 434",
+      "Markdown": "*foo\\\nbar*",
+      "HTML": "<p><em>foo<br />\nbar</em></p>"
+    },
+    {
+      "Name": "Example 435",
+      "Markdown": "`code  \nspan`",
+      "HTML": "<p><code>code span</code></p>"
+    },
+    {
+      "Name": "Example 436",
+      "Markdown": "`code\\\nspan`",
+      "HTML": "<p><code>code\\ span</code></p>"
+    },
+    {
+      "Name": "Example 437",
+      "Markdown": "<a href=\"foo  \nbar\">",
+      "HTML": "<p><a href=\"foo  \nbar\"></p>"
+    },
+    {
+      "Name": "Example 438",
+      "Markdown": "<a href=\"foo\\\nbar\">",
+      "HTML": "<p><a href=\"foo\\\nbar\"></p>"
+    },
+    {
+      "Name": "Example 439",
+      "Markdown": "foo\nbaz",
+      "HTML": "<p>foo\nbaz</p>"
+    },
+    {
+      "Name": "Example 440",
+      "Markdown": "foo \n baz",
+      "HTML": "<p>foo\nbaz</p>"
+    },
+    {
+      "Name": "Example 441",
+      "Markdown": "hello $.;'there",
+      "HTML": "<p>hello $.;'there</p>"
+    },
+    {
+      "Name": "Example 442",
+      "Markdown": "Foo χρῆν",
+      "HTML": "<p>Foo χρῆν</p>"
+    },
+    {
+      "Name": "Example 443",
+      "Markdown": "Multiple     spaces",
+      "HTML": "<p>Multiple     spaces</p>"
+    }
+  ]
+}
