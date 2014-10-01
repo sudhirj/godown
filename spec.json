@@ -518,7 +518,7 @@
     {
       "Name": "Example 104",
       "Markdown": "[Foo bar]:\n<my url>\n'title'\n\n[Foo bar]",
-      "HTML": "<p><a href=\"my url\" title=\"title\">Foo bar</a></p>"
+      "HTML": "<p><a href=\"my%20url\" title=\"title\">Foo bar</a></p>"
     },
     {
       "Name": "Example 105",
@@ -548,7 +548,7 @@
     {
       "Name": "Example 110",
       "Markdown": "[ΑΓΩ]: /φου\n\n[αγω]",
-      "HTML": "<p><a href=\"/φου\">αγω</a></p>"
+      "HTML": "<p><a href=\"/%CF%86%CE%BF%CF%85\">αγω</a></p>"
     },
     {
       "Name": "Example 111",
@@ -1073,7 +1073,7 @@
     {
       "Name": "Example 215",
       "Markdown": "<http://google.com?find=\\*>",
-      "HTML": "<p><a href=\"http://google.com?find=\\*\">http://google.com?find=\\*</a></p>"
+      "HTML": "<p><a href=\"http://google.com?find=%5C*\">http://google.com?find=\\*</a></p>"
     },
     {
       "Name": "Example 216",
@@ -1098,22 +1098,22 @@
     {
       "Name": "Example 220",
       "Markdown": "&nbsp; &amp; &copy; &AElig; &Dcaron; &frac34; &HilbertSpace; &DifferentialD; &ClockwiseContourIntegral;",
-      "HTML": "<p>&nbsp; &amp; &copy; &AElig; &Dcaron; &frac34; &HilbertSpace; &DifferentialD; &ClockwiseContourIntegral;</p>"
+      "HTML": "<p>  &amp; © Æ Ď ¾ ℋ ⅆ ∲</p>"
     },
     {
       "Name": "Example 221",
-      "Markdown": "&#1; &#35; &#1234; &#992; &#98765432;",
-      "HTML": "<p>&#1; &#35; &#1234; &#992; &#98765432;</p>"
+      "Markdown": "&#35; &#1234; &#992; &#98765432;",
+      "HTML": "<p># Ӓ Ϡ �</p>"
     },
     {
       "Name": "Example 222",
-      "Markdown": "&#x1; &#X22; &#XD06; &#xcab;",
-      "HTML": "<p>&#x1; &#X22; &#XD06; &#xcab;</p>"
+      "Markdown": "&#X22; &#XD06; &#xcab;",
+      "HTML": "<p>&quot; ആ ಫ</p>"
     },
     {
       "Name": "Example 223",
-      "Markdown": "&nbsp &x; &#; &#x; &#123456789; &ThisIsWayTooLongToBeAnEntityIsntIt; &hi?;",
-      "HTML": "<p>&amp;nbsp &amp;x; &amp;#; &amp;#x; &amp;#123456789; &amp;ThisIsWayTooLongToBeAnEntityIsntIt; &amp;hi?;</p>"
+      "Markdown": "&nbsp &x; &#; &#x; &ThisIsWayTooLongToBeAnEntityIsntIt; &hi?;",
+      "HTML": "<p>&amp;nbsp &amp;x; &amp;#; &amp;#x; &amp;ThisIsWayTooLongToBeAnEntityIsntIt; &amp;hi?;</p>"
     },
     {
       "Name": "Example 224",
@@ -1123,7 +1123,7 @@
     {
       "Name": "Example 225",
       "Markdown": "&MadeUpEntity;",
-      "HTML": "<p>&MadeUpEntity;</p>"
+      "HTML": "<p>&amp;MadeUpEntity;</p>"
     },
     {
       "Name": "Example 226",
@@ -1133,17 +1133,17 @@
     {
       "Name": "Example 227",
       "Markdown": "[foo](/f&ouml;&ouml; \"f&ouml;&ouml;\")",
-      "HTML": "<p><a href=\"/f&ouml;&ouml;\" title=\"f&ouml;&ouml;\">foo</a></p>"
+      "HTML": "<p><a href=\"/f%C3%B6%C3%B6\" title=\"föö\">foo</a></p>"
     },
     {
       "Name": "Example 228",
       "Markdown": "[foo]\n\n[foo]: /f&ouml;&ouml; \"f&ouml;&ouml;\"",
-      "HTML": "<p><a href=\"/f&ouml;&ouml;\" title=\"f&ouml;&ouml;\">foo</a></p>"
+      "HTML": "<p><a href=\"/f%C3%B6%C3%B6\" title=\"föö\">foo</a></p>"
     },
     {
       "Name": "Example 229",
       "Markdown": "``` f&ouml;&ouml;\nfoo\n```",
-      "HTML": "<pre><code class=\"language-f&ouml;&ouml;\">foo\n</code></pre>"
+      "HTML": "<pre><code class=\"language-föö\">foo\n</code></pre>"
     },
     {
       "Name": "Example 230",
@@ -1203,7 +1203,7 @@
     {
       "Name": "Example 241",
       "Markdown": "<http://foo.bar.`baz>`",
-      "HTML": "<p><a href=\"http://foo.bar.`baz\">http://foo.bar.`baz</a>`</p>"
+      "HTML": "<p><a href=\"http://foo.bar.%60baz\">http://foo.bar.`baz</a>`</p>"
     },
     {
       "Name": "Example 242",
@@ -1658,7 +1658,7 @@
     {
       "Name": "Example 332",
       "Markdown": "[link](</my uri>)",
-      "HTML": "<p><a href=\"/my uri\">link</a></p>"
+      "HTML": "<p><a href=\"/my%20uri\">link</a></p>"
     },
     {
       "Name": "Example 333",
@@ -1693,12 +1693,12 @@
     {
       "Name": "Example 339",
       "Markdown": "[link](foo%20b&auml;)",
-      "HTML": "<p><a href=\"foo%20b&auml;\">link</a></p>"
+      "HTML": "<p><a href=\"foo%20b%C3%A4\">link</a></p>"
     },
     {
       "Name": "Example 340",
       "Markdown": "[link](\"title\")",
-      "HTML": "<p><a href=\"&quot;title&quot;\">link</a></p>"
+      "HTML": "<p><a href=\"%22title%22\">link</a></p>"
     },
     {
       "Name": "Example 341",

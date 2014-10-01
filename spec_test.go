@@ -2,8 +2,8 @@ package main
 
 import (
 	"encoding/json"
-	"fmt"
 	"io/ioutil"
+	"strings"
 	"testing"
 
 	"github.com/kr/pretty"
@@ -30,21 +30,28 @@ func TestSpec(t *testing.T) {
 	}
 
 	i := 0
+	failed := 0
 	for i < len(spec.Examples) {
 		example := spec.Examples[i]
-		fmt.Println(example.Name)
-		if example.Markdown != example.HTML {
+		renderedHTML := RenderHTML(Parse(example.Markdown))
+		if renderedHTML != example.HTML {
+			failed = failed + 1
 			t.Error("===== " + example.Name + " failed. =====")
 			t.Error("===== MARKDOWN =====")
-			t.Error(example.Markdown)
+			t.Error(strings.Replace(example.Markdown, "\t", "→", -1))
 			t.Error("===== EXPECTED HTML =====")
 			t.Error(example.HTML)
 			t.Error("===== GOT HTML =====")
-			t.Error(example.HTML)
-			t.Error(pretty.Diff(example.Markdown, example.HTML))
+			t.Error(renderedHTML)
+			t.Error(pretty.Diff(example.HTML, renderedHTML))
 			t.Error("\n\n")
 		}
 		i = i + 1
+		if failed > 3 {
+			i = len(spec.Examples)
+		}
 	}
+	passed := len(spec.Examples) - failed
+	t.Log("Passed: ", passed, "/", len(spec.Examples))
 
 }
