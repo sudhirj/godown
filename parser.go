@@ -3,13 +3,6 @@ package main
 import "strings"
 import "container/list"
 
-func wrap(tag, content string) string {
-	if tag != "" {
-		return "<" + tag + ">" + content + "</" + tag + ">"
-	}
-	return content
-}
-
 type block struct {
 	openingTag string
 	closingTag string

@@ -47,9 +47,6 @@ func TestSpec(t *testing.T) {
 			t.Error("\n\n")
 		}
 		i = i + 1
-		if failed > 3 {
-			i = len(spec.Examples)
-		}
 	}
 	passed := len(spec.Examples) - failed
 	t.Log("Passed: ", passed, "/", len(spec.Examples))
